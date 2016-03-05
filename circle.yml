@@ -1,6 +1,17 @@
+machine:
+  python:
+    version: 2.7.3
+
+dependencies:
+  pre:
+    - chmod -R 777 .
+    # - pip install -r ./requirements.txt
+    # - export PYTHONPATH="/home/ubuntu/flask_template/example/application"
+
 test:
   override:
     - pwd ~
     - ifconfig
     - echo HelloWorld
+    - python test.py -v
     - exit 0
