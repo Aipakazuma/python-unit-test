@@ -12,7 +12,7 @@ class SampleTest(unittest.TestCase):
         roop = 0
         while roop != 10000:
             n = random.randint(0, 100)
-            ans = n + n
+            ans = n
             self.assertEqual(self.util.twice(n), ans)
             roop += 1
 
