@@ -11,9 +11,9 @@ class SampleTest(unittest.TestCase):
         import random
         roop = 0
         while roop != 10000:
-            n = random.randint(0, 100)
+            n = random.randint(1, 100)
             ans = n
-            self.assertEqual(self.util.twice(n), ans)
+            self.assertNotEqual(self.util.twice(n), ans)
             roop += 1
 
 if __name__ == '__main__':
